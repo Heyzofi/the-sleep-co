@@ -109,12 +109,21 @@ a:hover{
 /* Header & Footer Styles */
 
 header{
+    background-color: white;
+}
+
+header h3{
+    font-size: 5.5rem;
+    line-height: 1.1;
+}
+
+.banner {
     background-image: url('/images/the-sleep-co-white\ \(1\).jpg');
     background-size: cover;
     background-position: center;
 }
 
-header h3{
+.banner h3{
     font-size: 5.5rem;
     line-height: 1.1;
 }
