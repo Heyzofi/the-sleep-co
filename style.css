@@ -138,7 +138,9 @@ header .social-links{
     background-size: cover;
     background-position: center;
 }
-
+.white{
+    background-color: white;
+}
 .banner h3{
     font-size: 5.5rem;
     line-height: 1.1;
