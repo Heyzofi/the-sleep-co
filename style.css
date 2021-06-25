@@ -105,18 +105,27 @@ a:hover{
 
 .justified{text-align: justify;}
 
+.centered{justify-content: center;}
+.aligned{align-self:center;}
 
 /* Header & Footer Styles */
-
-header{
-    background-color: white;
-}
 
 header h3{
     font-size: 5.5rem;
     line-height: 1.1;
 }
+header a{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+    border-bottom: none;
+}
 
+header .social-links{
+    display: flex;
+  justify-content: flex-end;
+}
 .banner {
     background-image: url('/images/the-sleep-co-white\ \(1\).jpg');
     background-size: cover;
