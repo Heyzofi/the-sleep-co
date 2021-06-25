@@ -33,11 +33,16 @@ body{
 .padded-sm{padding: 1rem;}
 .padded-lg{padding: 10%;}
 
+.padded-none {
+    padding: 0;
+  }
+
 .bg-dark {
     background-color: #192B37;
     color: white;
 }
 
+.tall-10{min-height: 10vh;}
 .tall-50{min-height: 50vh;}
 .tall-60{min-height: 60vh;}
 .tall-70{min-height: 70vh;}
@@ -121,7 +126,9 @@ header a{
     padding: 0.5rem;
     border-bottom: none;
 }
-
+header [class*=col-] {
+    padding: 0;
+  }
 header .social-links{
     display: flex;
   justify-content: flex-end;
