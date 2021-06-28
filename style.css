@@ -21,7 +21,10 @@
     background-size: cover;
     min-height: 10rem;
 }
-
+.bg-video{
+    background-size: cover;
+    min-height: 10rem;
+}
 .landscape{padding-bottom: 65%;}
 .portrait{padding-bottom: 125%;}
 .square{padding-bottom: 100%;}
@@ -205,3 +208,22 @@ background-position: 50% 35%;
     color: rgb(120,120,125);
     line-height: 1;
 }
+
+/*Buttons & Forms*/
+input,
+textarea{
+    width: 100%;
+    display: block;
+}
+
+textarea{
+    min-height: 5rem;
+  }
+  form button{
+    background-color: #FFBE00;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.1em;
+    margin: 0.5rem 0;
+  }

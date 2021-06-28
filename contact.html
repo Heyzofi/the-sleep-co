@@ -23,7 +23,7 @@
 <body>
     <!---------------Header & Banner---------------->
     <header class="grid banner tall-60">
-        <div class="header-nav col-12 grid">
+        <div class="header-nav col-12 grid-spaceBetween">
             <nav class="col-5 left padded-sm">
                 <a href="index.html"> Home </a>
                 <a href="about.html"> About </a>
@@ -55,7 +55,12 @@
          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto quae ad quod deserunt animi. Doloribus recusandae laudantium quam placeat perspiciatis cumque illum. Accusamus omnis, id aperiam delectus atque consequatur.</p>
     </div>
     <div class="col-6 padded">
-        <h2> ADD CONTACT FORM HERE! </h2>
+        <form> 
+            <input type="text" name="_name" id="_name" placeholder="Name">
+            <input type="email" name="_replyto" id="_replyto" placeholder="Email"> 
+            <textarea name="message" placeholder="Tell us what you want..."> </textarea>
+            <button type="submit"> SUBMIT </button>
+        </form>
     </div>
 
 </section>
