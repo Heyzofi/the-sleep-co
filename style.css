@@ -19,8 +19,10 @@
 .bg-image{
     background-image: url('images/the-sleep-co-white\ \(1\).jpg');
     background-size: cover;
-    min-height: 10rem;
+    background-repeat: no-repeat;
 }
+
+
 .bg-video{
     background-size: cover;
     min-height: 10rem;
@@ -36,9 +38,7 @@
 .padded-05{padding: 0.5rem;}
 .padded-lg{padding: 10%;}
 .padded-top-0{padding-top:none;}
-.padded-none {
-    padding: 0;
-  }
+.padded-none { padding: 0;}
 .margin-bottom-0{
     margin-bottom: 0;
 }
@@ -81,6 +81,10 @@ body{
 h2,h3,h4,h5,h6{
     margin-bottom: 1rem;
     line-height: 1.1;
+}
+
+h1{
+    font-size: 2rem;
 }
 h2{
     font-size: 2.5rem;
@@ -164,6 +168,7 @@ header a{
 header .social-links{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 footer .social-links{
@@ -224,7 +229,7 @@ background-position: 50% 35%;
     display: block;
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 /* Testimonial Block */
@@ -294,6 +299,7 @@ body {border: 2px solid green; padding: 0.5rem;}
     
   .show-md { display: block; }
   .hide-md { display: none;  }
+
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -309,6 +315,13 @@ body {border: 2px solid green; padding: 0.5rem;}
   header .social-links{
     display: flex;
     justify-content: center;
+    }
+
+    .fas,
+    .fab {font-size: 1.5rem;}
+
+    .banner h3{
+        font-size: 11vw;
     }
 	 
   .sm-text{font-size: 0.5rem;}  
@@ -342,9 +355,9 @@ body {border: 2px solid green; padding: 0.5rem;}
     
     .show-md { display: block; }
     .hide-md { display: none;  }
-  }
 
     .md-tall-80 {min-height: 80vh;}
+}
   
   /* ------- SM Media Query (48em / 768px) --------------- */ 
   /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
@@ -380,4 +393,10 @@ body {border: 2px solid green; padding: 0.5rem;}
     
     .show-xs { display: block; }
     .hide-xs { display: none;  }
+
+    h1{
+        font-size: 1.4rem;
+        line-height: 1.1;
+    }
+    .sx-tall-50 {min-height: 50vh;}
   }
