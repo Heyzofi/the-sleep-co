@@ -363,6 +363,12 @@ body {border: 2px solid green; padding: 0.5rem;}
   /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
   
   @media (max-width: 48em) {
+
+    html {font-size: 14px;}
+    p {font-size: 1.1rem;}
+
+    body {border: 2px solid purple;}
+
     .show-sm { display: block; }
     .hide-sm { display: none;  }
        
@@ -398,5 +404,24 @@ body {border: 2px solid green; padding: 0.5rem;}
         font-size: 1.4rem;
         line-height: 1.1;
     }
+
+    h2{
+        font-size: 2rem;
+    }
     .sx-tall-50 {min-height: 50vh;}
+  }
+
+
+  /* ------- XXS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) {
+
+    html {font-size: 14px;}
+    
+   [class*="grid"] .xxs-stack { 
+        flex-basis: 100%; 
+        max-width: 100%;
+    }
+
   }
