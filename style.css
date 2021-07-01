@@ -226,9 +226,9 @@ background-position: 50% 35%;
 /* Icon Grid */
 .fas,
 .fab {
-    display: block;
+    display: inline-block;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     font-size: 2rem;
 }
 
