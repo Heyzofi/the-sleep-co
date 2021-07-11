@@ -1,48 +1,19 @@
-<!DOCTYPE html>
-<html>
-<!--This is the head of our html where we add external resourses and metadata-->
-<head>
-
-    <!--Viewport meta for responsive-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> Sleep Like A Baby </title>
-
-   <!--This is our fontawesome icons-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-   <!--Gridlex for our flexbox grids-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
-
-   <!-- Google fonts - catamaran (200,400,500, 800)-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;400;500;800&display=swap" rel="stylesheet" />
-    
-    <!--This is the CSS style sheet, this always goes last-->
-    <link rel="stylesheet" href="/style.css" />
-
-</head>
-<!--This is the body of our html, this is where all of your html goes-->
-<body>
-
+---
+layout: default
+cards:
+ - heading: Small heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus officiis, repellat nulla at molestias!
+   featured_image: /images/the-sleep-co-white\ \(1\).jpg
+ - heading: Small heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus officiis, repellat nulla at molestias!
+   featured_image: /images/the-sleep-co-bed.jpg
+ - heading: Small heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus officiis, repellat nulla at molestias!
+   featured_image: /images/the-sleep-co-3.jpg
+---
     <!---------------Header & Banner---------------->
     <header class="grid banner tall-60">
-        <div class="header-nav col-12-top grid-spaceBetween sm-padded-0">
-                <nav class="col-7_sm-12-middle left padded-sm sm-text-center sm-padded-b-0 sm-margin-b-0">
-                    <a href="index.html"> Home </a>
-                    <a href="about.html"> About </a>
-                    <a href="products.html"> Products </a>
-                    <a href="contact.html"> Contact </a>
-                </nav>
-                <nav class="col-5_sm-12 text-right social-links padded-sm  sm-text-center sm-padded-t-0">
-                    <a href="#"> 
-                        <i class="fab fa-facebook-square padded-right-1"> </i>
-                    </a>
-                    <a href="#"> 
-                        <i class="fab fa-instagram"> </i>
-                    </a> 
-                </nav>    
-            </div>
+        {% include header-nav.html %}
         <section class="col-12 text-center">
                 <h3 class="font-weight-extra-bold editable">
                 <span class="featured-text"> addictively </span> soft
@@ -78,34 +49,20 @@
 
 <!---------------Cards Section---------------->
 <section class="grid padded">
-    <div class="col-4 padded-sm">
-        <div class="card bordered">
-            <div class="bg-image portrait"></div>
-            <div class="padded-sm">
-                <h3> little heading </h3>
-                <p class="justified"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos fuga nemo deleniti nam suscipit odio! Quas quidem quos quaerat, mollitia minus at officiis, eius deleniti cupiditate, quisquam molestias voluptates.</p>
-            </div>
-        </div>
 
-    </div>
+    {% for item in page.cards %}
+
     <div class="col-4 padded-sm">
         <div class="card bordered">
-            <div class="bg-image portrait"></div>
+            <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"> </div>
             <div class="padded-sm">
-                <h3> little heading </h3>
-                <p class="justified"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos fuga nemo deleniti nam suscipit odio! Quas quidem quos quaerat, mollitia minus at officiis, eius deleniti cupiditate, quisquam molestias voluptates.</p>
+                <h3> {{item.heading}} </h3>
+                <p class="justified"> {{item.description}} </p>
             </div>
         </div>
     </div>
-    <div class="col-4 padded-sm">
-        <div class="card bordered">
-            <div class="bg-image portrait"></div>
-            <div class="padded-sm">
-                <h3> little heading </h3>
-                <p class="justified"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos fuga nemo deleniti nam suscipit odio! Quas quidem quos quaerat, mollitia minus at officiis, eius deleniti cupiditate, quisquam molestias voluptates.</p>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+  
 </section>
 
 <!--------------- Image Banner ---------------->
@@ -152,28 +109,3 @@
     </div>
 </section>
 
-<!---------------Footer Section---------------->
-<footer class="padded grid-center bg-dark">
-    <div class="padded-sm col-12 text-center">
-        <h2> THE SLEEP CO </h2>
-    </div>
-    <div class="padded-sm col-5 text-center">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima alias, temporibus nobis explicabo laborum sed ullam tenetur expedita possimus? </p>
-    </div>
-    <nav class="col-12 text-center social-links padded-sm">
-        <a href="#"> 
-            <i class="fab fa-facebook-square padded-05 margin-bottom-0"> </i>
-        </a>
-        <a href="#"> 
-            <i class="fab fa-instagram padded-05 margin-bottom-0"> </i>
-        </a> 
-        <a href="#"> 
-            <i class="fab fa-instagram padded-05 margin-bottom-0"> </i>
-        </a> 
-    </nav> 
-</footer>
-
-
-
-</body>
-</html>
