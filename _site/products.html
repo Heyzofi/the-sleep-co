@@ -28,14 +28,23 @@
 
 <!---------------Header & Banner---------------->
     <header class="grid banner tall-60">
-        <div class="header-nav col-12-top grid-spaceBetween sm-padded-0">
-    <nav class="col-7_sm-12-middle left padded-sm sm-text-center sm-padded-b-0 sm-margin-b-0">
+        
+
+<div class="header-nav col-12-top grid-spaceBetween sm-padded-0">
+    <nav class="col-7_sm-12-middle left padded-sm sm-text-center sm-padded-b-0 sm-margin-b-0 hide-sm">
         <a href="index.html"> Home </a>
         <a href="about.html"> About </a>
         <a href="products.html"> Products </a>
         <a href="contact.html"> Contact </a>
     </nav>
-    <nav class="col-5_sm-12 text-right social-links padded-sm  sm-text-center sm-padded-t-0">
+
+    <div class="col-1-middle show-sm">
+        <div class="hamburger-button">
+            <i class="fas fa-bars"></i>"
+        </div>   
+    </div>
+
+    <nav class="col-5_sm-11 text-right social-links padded-sm  sm-text-center sm-padded-t-0">
         <a href="#"> 
             <i class="fab fa-facebook-square padded-right-1"> </i>
         </a>
@@ -43,7 +52,15 @@
             <i class="fab fa-instagram"> </i>
         </a> 
     </nav>    
+
 </div>
+
+<nav class="mobile-menu bg-featured padded">
+    <a href="index.html"> Home </a>
+    <a href="about.html"> About </a>
+    <a href="products.html"> Products </a>
+    <a href="contact.html"> Contact </a>
+</nav>
         <section class="col-12 text-center">
                 <h3 class="font-weight-extra-bold editable">
                     <span class="featured-text"> addictively </span> soft
@@ -202,6 +219,12 @@
     })();
 </script>
 <!-- /GetButton.io widget -->
+
+<!-- Add JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Our custom Javascript file -->
+<script src="/scripts.js"></script>
 
 </body>
 </html>   
