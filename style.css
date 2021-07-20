@@ -20,16 +20,28 @@
     background-image: url('images/the-sleep-co-white\ \(1\).jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+    background-position: center;
 }
 
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 .bg-video{
     background-size: cover;
     min-height: 10rem;
 }
+
 .landscape{padding-bottom: 65%;}
 .portrait{padding-bottom: 125%;}
 .square{padding-bottom: 100%;}
+
+.portrait-tall {padding-bottom: 254%;}
+ 
+.landscape-wide {padding-bottom: 56%;}
 
 /* Universal styles & utility classes */
 
@@ -231,6 +243,13 @@ background-position: 50% 35%;
     margin-bottom: 1rem;
     font-size: 2rem;
 }
+
+/* Image Gallery */
+
+.gallery [class*="col-"] {
+    padding: 0.5%;
+  }
+
 
 /* Mobile Menu Styles */
 

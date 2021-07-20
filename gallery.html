@@ -1,0 +1,82 @@
+---
+layout: default
+gallery:
+- coloumn-size: col-6
+  aspect-ratio: square
+  background-image: /images/the-sleep-co-3.jpg
+- coloumn-size: col-6
+  aspect-ratio: square
+  background-image: /images/the-sleep-co-pug\ \(1\).jpg
+- coloumn-size: col-12
+  aspect-ratio: landscape
+  background-image: /images/the-sleep-co-bed.jpg
+- coloumn-size: col-4
+  aspect-ratio: landscape
+  background-image: /images/the-sleep-co-3.jpg
+- coloumn-size: col-4
+  aspect-ratio: landscape
+  background-image: /images/the-sleep-co-pug\ \(1\).jpg
+- coloumn-size: col-4
+  aspect-ratio: landscape
+  background-image: /images/the-sleep-co-bed.jpg    
+---
+
+
+<!---------------Header & Banner---------------->
+<header class="grid banner tall-60">
+            
+    {% include header-nav.html %}
+
+        <section class="col-12-top text-center">
+                <h3 class="font-weight-extra-bold editable" data-aos="fade-in" data-aos-duration="1000">
+                <span class="featured-text">explore</span> our world
+                </h3>
+                <h1 class="font-weight-light editable" data-aos="fade-up" data-aos-delay="500">
+                the ultimate mattress solution
+                </h1>
+        </section>
+</header>
+
+<section class="padded">
+
+    <div class="gallery grid">
+
+        {% for item in page.gallery %}
+          <div class="{{item.coloumn-size}}">
+            <div class="bg-image {{item.aspect-ratio}}" 
+                 style="background-image: url('{{item.background-image}}');"> </div>
+          </div>
+        {% endfor %}  
+          
+        </div>
+        
+       
+        <!-- <div class="gallery grid">
+              <div class="col-4">
+                <div class="bg-image portrait-tall bg-img-1"> </div>
+              </div>
+              <div class="col-8">
+                <div class="bg-image portrait bg-img-2"> </div>
+              </div>
+              
+              <div class="col-6">
+                <div class="bg-image portrait bg-img-1"> </div>
+              </div>
+              <div class="col-6">
+                <div class="bg-image portrait bg-img-2"> </div>
+              </div>
+              <div class="col-4_xs-12">
+                <div class="bg-image square bg-img-3"> </div>
+              </div>
+              <div class="col-4_xs-12">
+                <div class="bg-image square bg-img-4"> </div>
+              </div>
+              <div class="col-4_xs-12">
+                <div class="bg-image square"> </div>
+              </div>
+              <div class="col-12">
+                <div class="bg-image landscape bg-img-5"> </div>
+              </div>
+            </div> -->
+
+</section>
