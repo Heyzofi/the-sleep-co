@@ -11,6 +11,9 @@
     box-sizing: border-box;
 }
 
+img { max-width: 100%; }
+
+
 /* ----- temporary styles for structural html----- */
 
 
