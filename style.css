@@ -250,7 +250,27 @@ background-position: 50% 35%;
     padding: 0.5%;
   }
 
+.gallery .gallery-item {
+    border-bottom: none;
+}
+.button{
+    background-color: #FFBE00;
+    color: inherit;
+    padding: 0.5rem 2rem;
+    appearance: none;
+    border: 2px solid #FFBE00;
+  }
 
+/* Background of Gallery when Active*/
+.lg-backdrop{
+    background-color: rgb(20,20,20);
+}
+.lg-backdrop.in{
+    opacity: 0.9;
+}
+.lg-sub-html{
+    background-color: rgb(20,20,20); 
+}
 /* Mobile Menu Styles */
 
 .mobile-menu {
